@@ -6,6 +6,8 @@ const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const webpack = require("webpack");
 const path = require("path");
 
+require("dotenv").config();
+
 if (!process.env.API_URI) {
   throw new Error("Environment variable API_URI not set");
 }
